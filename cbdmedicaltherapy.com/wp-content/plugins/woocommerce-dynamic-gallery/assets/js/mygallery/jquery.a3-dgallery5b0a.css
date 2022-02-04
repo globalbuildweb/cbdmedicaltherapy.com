@@ -1,0 +1,332 @@
+.svg-inline--fa {
+    box-sizing: content-box !important;
+}
+.a3-dgallery {
+	position: relative;
+}
+.a3-dgallery, .a3-dgallery * {
+	margin: 0;
+	padding: 0;
+}
+.a3-dgallery .fa-angle-left {
+	align-self: center;
+}
+.a3-dgallery .fa-angle-right {
+	align-self: center;
+}
+.a3-dgallery .fa-caret-left:before {
+	font-size: 30px;
+}
+.a3-dgallery .fa-caret-right:before {
+	font-size: 30px;
+}
+.a3-dgallery svg.fa-caret-right,
+.a3-dgallery svg.fa-caret-left {
+	font-size: 30px;
+	box-sizing: content-box !important;
+}
+.a3-dgallery .fa-pause:before {
+	font-size: 25px;
+}
+.a3-dgallery .fa-play:before {
+	font-size: 25px;
+}
+.a3-dgallery svg.fa-pause,
+.a3-dgallery svg.fa-play {
+	font-size: 25px;
+	box-sizing: content-box !important;
+}
+.a3-dgallery .a3dg-image-wrapper {
+	border: 1px solid #666;
+	margin-bottom:10px;
+	position: relative;
+    overflow: hidden !important;
+    z-index: 8 !important;
+}
+.a3-dgallery .a3dg-image-wrapper .a3dg-loader {
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	top: 50%;
+	margin-left: -20px;
+	margin-top: -7px;
+}
+.a3-dgallery .a3dg-image-wrapper .a3dg-next, .a3-dgallery .a3dg-image-wrapper .a3dg-prev {
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	cursor: pointer;
+	display: none;
+	z-index: 100;
+	background-color: #fff;
+	padding: 5px;
+	opacity: 0.7;
+	line-height: 1;
+}
+.a3-dgallery .a3dg-image-wrapper:hover .a3dg-next, .a3-dgallery .a3dg-image-wrapper:hover .a3dg-prev {
+	display: block;
+}
+.a3-dgallery .a3dg-image-wrapper .a3dg-next {
+	right: 10px;
+}
+.a3-dgallery .a3dg-image-wrapper .a3dg-prev {
+	left: 10px;
+}
+.a3-dgallery .a3dg-image-wrapper .a3dg-image {
+	width: 100% !important;
+    text-align: center;
+	position: absolute;
+	overflow: hidden;
+	left: 0;
+	z-index: 9;
+	display: block !important;
+}
+.a3-dgallery .a3dg-image-wrapper .a3dg-image a img {
+	border: 0;
+}
+.a3dg-thumb-list {
+	margin-bottom:0 !important;
+	margin-left:0 !important;
+	padding:0 !important;
+}
+.a3-dgallery .a3dg-slideshow-controls {
+	float: right;
+}
+.a3-dgallery .a3dg-slideshow-controls .a3dg-slideshow-start, .a3-dgallery .a3dg-slideshow-controls .a3dg-slideshow-stop {
+	padding-left: 5px;
+	cursor: pointer;
+}
+.a3-dgallery .a3dg-slideshow-controls .a3dg-slideshow-countdown {
+	padding-left: 5px;
+	font-size: 0.9em;
+}
+.a3-dgallery .a3dg-slideshow-running .a3dg-slideshow-start {
+	cursor: default;
+	font-style: italic;
+}
+.a3-dgallery .a3dg-nav {
+	position: relative;
+	width: 100%;
+	margin-bottom:20px;
+	visibility: hidden;
+}
+.a3-dgallery .a3dg-forward, .a3-dgallery .a3dg-back {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	z-index: 10;
+	cursor: pointer;
+	display: flex;
+	padding: 5px
+	background-color: #fff;
+	border: 1px solid #666;
+}
+.a3-dgallery .a3dg-back {
+	left: 0;
+}
+.a3-dgallery .a3dg-forward {
+	right: 0;
+}
+.a3-dgallery .a3dg-nav .a3dg-thumbs {
+	overflow: hidden;
+	position: relative;
+	padding:0px;
+}
+.a3-dgallery .a3dg-thumbs .a3dg-thumb-list {
+	float: none !important;
+	width: 9000px;
+	list-style: none;
+	margin-top: 0px;
+	display: flex !important;
+	align-items: center;
+}
+.a3-dgallery .a3dg-thumbs-static .a3dg-thumb-list {
+	display: block !important;
+	width: 100%;
+}
+.a3-dgallery .a3dg-thumbs li {
+	background: none repeat scroll 0 0 transparent;
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0 !important;
+	list-style:none !important;
+	box-sizing: border-box !important;
+}
+
+.a3-dgallery .a3dg-thumbs li.first_item {
+	clear: left;
+}
+
+.a3-dgallery .a3dg-thumbs li.last_item {
+	margin-right: 0 !important;
+	clear: right;
+}
+
+
+/* Can't do display none, since Opera won't load the images then */
+.a3dg-preloads {
+	position: absolute;
+	left: -9000px;
+	top: -9000px;
+}
+.a3dg-image img {
+	height:auto !important;
+	max-height:100% !important;
+	max-width:100% !important;
+	vertical-align:middle !important;
+	margin:0 !important;
+	padding:0 !important;
+	box-shadow:0 0 0 !important;
+	border:none !important;
+	background:none !important;
+	display:inline-block !important;
+	visibility: visible !important;
+}
+.a3dg-image img:hover {
+	cursor:pointer;
+}
+
+.a3-dgallery .lazy-load {
+	background-color: #000000;
+	width: 0px;
+	height:3px;
+	opacity:1;
+}
+.a3dg-slideshow-controls .a3dg-slideshow-start span {
+	background: url("tn3.html") repeat scroll -49px -25px transparent;
+	bottom: 2px;
+	cursor: pointer;
+	height: 25px;
+	left: 0;
+	position: absolute;
+	text-indent: -999em;
+	width: 15px;
+}
+
+.a3dg-slideshow-countdown {
+	display:none !important;
+}
+
+.a3dg-image-wrapper .slide-ctrl {
+	display: none;
+	left: 50%;
+	top: 50%;
+	margin-left: -16px;
+	margin-top: -16px;
+	position: absolute;
+	z-index: 1000;
+	cursor:pointer;
+}
+.a3dg-image-wrapper .slide-ctrl .a3dg-slideshow-start-slide,
+.a3dg-image-wrapper .slide-ctrl .a3dg-slideshow-stop-slide {
+	padding: 10px;
+	line-height: 1;
+	background-color: #fff;
+	opacity: 0.7;
+}
+
+.a3dg-image-wrapper:hover .slide-ctrl {
+    display: block;
+}
+
+/*Product Gallery*/
+.product_gallery * {
+	box-sizing:border-box !important;
+	-moz-box-sizing:border-box !important;
+	-webkit-box-sizing:border-box !important;
+}
+.product_gallery .a3-dgallery {
+	margin-top: 0px !important;
+}
+
+.product_gallery .a3-dgallery .a3dg-thumbs li a {
+	outline: none;
+	display: block;
+	margin: 0;
+}
+.product_gallery .a3-dgallery .a3dg-thumbs li a img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	box-shadow: 0 0px 0px 0;
+	-webkit-box-shadow: 0 0px 0px 0;
+	-moz-box-shadow: 0 0px 0px 0;
+	-webkit-transition: all ease-in-out 0.0s;
+	-moz-transition: all ease-in-out 0.0s;
+	-o-transition: all ease-in-out 0.0s;
+	transition: all ease-in-out 0.0s;
+	vertical-align:middle;
+	margin:auto !important;
+	padding:0 !important;
+	border:none !important;
+	width: auto !important;
+}
+
+/* Caption Text */
+.a3-dgallery .a3dg-image-wrapper .a3dg-image-description {
+	color: #FFF;
+	background-color: rgba(0, 0, 0, 0.5);
+	left: 0;
+    line-height: 1.4em;
+    padding: 2% !important;
+    position: absolute;
+    text-align: left;
+    width: 100% !important;
+    z-index: 10;
+    font-weight: normal;
+}
+.a3-dgallery .a3dg-image-wrapper .a3dg-image-description .a3dg-description-title {
+	display: block;
+}
+
+.product_gallery .a3dg-navbar-separator {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	height: 100%;
+	width: 1px;
+	border-left: 1px solid #666;
+}
+
+.product_gallery .a3dg-navbar-control {
+	border: 1px solid #666;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	position: relative;
+	float: left;
+	width: 100%;
+}
+.product_gallery .a3dg-navbar-control .icon_zoom,
+.product_gallery .a3dg-navbar-control .slide-ctrl {
+    float: left;
+    padding: 5px;
+    width: 50%;
+	cursor:pointer;
+}
+.product_gallery .a3dg-navbar-control .slide-ctrl {
+	float: right;
+}
+.product_gallery .a3dg-navbar-control .icon_zoom span,
+.product_gallery .a3dg-navbar-control .slide-ctrl span {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.product_gallery .slide-ctrl .a3dg-slideshow-start-slide {
+	display:block;
+}
+.product_gallery .slide-ctrl .a3dg-slideshow-stop-slide {
+	display:none;
+}
+.product_gallery .slide-ctrl.a3dg-slideshow-running .a3dg-slideshow-start-slide {
+	display:none;
+}
+.product_gallery .slide-ctrl.a3dg-slideshow-running .a3dg-slideshow-stop-slide {
+	display:block;
+}
+
+.a3-dgallery .a3dg-thumbs li div img{margin:auto;}
+.gallery_loading {
+	background: url("loader.gif") no-repeat scroll center center transparent !important;
+}
