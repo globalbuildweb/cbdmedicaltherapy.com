@@ -1,8 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-cbdmedicaltherapy.com	TRUE	/	FALSE	1999999999	woocommerce_items_in_cart	1
-cbdmedicaltherapy.com	TRUE	/	FALSE	1999999999	wp_woocommerce_session_7a3ae05a596ff93472a6c2e9aaca24d6	f230a40a37bf8f8838f6bfb2ba870a28%7C%7C1644096485%7C%7C1644092885%7C%7Cbc4e602abb8b467b2a9f0a6d8effa761
-cbdmedicaltherapy.com	TRUE	/	FALSE	1999999999	woocommerce_cart_hash	aecb4fe4bb539632a381bdf26dd31d54
-cbdmedicaltherapy.com	TRUE	/	FALSE	1999999999	pll_language	en
-cbdmedicaltherapy.com	TRUE	/	FALSE	1999999999	SameSite	Lax
-
